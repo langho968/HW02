@@ -1,15 +1,9 @@
 ﻿#include "Archer.h"
 #include <iostream>
 
-Archer::Archer(string nickName) : Player(nickName)
+Archer::Archer(string nickName) : Player(nickName, 180, 50, 20, 10, 100, 20)
 {
     this->jobName = "궁수";
-    this->HP = 180;
-    this->MP = 50;
-    this->power = 20;
-    this->defence = 10;
-    this->accuracy = 100;
-    this->speed = 20;
 }
 
 void Archer::attack()

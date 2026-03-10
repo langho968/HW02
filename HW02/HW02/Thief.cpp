@@ -1,16 +1,12 @@
 ﻿#include "Thief.h"
 #include <iostream>
 
-Thief::Thief(string nickName) : Player(nickName)
+Thief::Thief(string nickName) : Player(nickName, 200, 50, 20, 20, 80, 10)
 {
     this->jobName = "도적";
-    this->HP = 150;
-    this->MP = 50;
-    this->power = 15;
-    this->defence = 5;
-    this->accuracy = 80;
-    this->speed = 30;
 }
+
+
 
 void Thief::attack()
 {

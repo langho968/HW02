@@ -1,15 +1,10 @@
 ﻿#include "Warrior.h"
 #include <iostream>
 
-Warrior::Warrior(string nickName) : Player(nickName)
+Warrior::Warrior(string nickName) 
+    : Player(nickName, 200, 50, 20, 20, 80, 10)
 {
     this->jobName = "전사";
-    this->HP = 200;
-    this->MP = 50;
-    this->power = 20;
-    this->defence = 20;
-    this->accuracy = 80;
-    this->speed = 10;
 }
 
 void Warrior::attack() 

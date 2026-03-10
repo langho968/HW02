@@ -1,15 +1,10 @@
 ﻿#include "Magician.h"
 #include <iostream>
 
-Magician::Magician(string nickName) : Player(nickName)
+Magician::Magician(string nickName) : Player(nickName, 100, 100, 5, 5, 80, 5)
 {
     this->jobName = "마법사";
-    this->HP = 100;
-    this->MP = 100;
-    this->power = 5;
-    this->defence = 5;
-    this->accuracy = 80;
-    this->speed = 5;
+
 }
 
 void Magician::attack()

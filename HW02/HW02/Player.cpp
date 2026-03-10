@@ -1,18 +1,20 @@
 ﻿#include "Player.h"
 #include <iostream>
-
+/*
 Player::Player(string nickName)
-{
-    this->nickName = nickName;
-    this->level = 1;
-    this->HP = 0;
-    this->MP = 0;
-    this->power = 0;
-    this->defence = 0;
-    this->accuracy = 0;
-    this->speed = 0;    
-}
-
+    : nickName(nickName)
+    , level(1)
+    , HP(0)
+    , MP(0)
+    , power(0)
+    , defence(0)
+    , accuracy(0)
+    , speed(0)
+{}
+*/
+Player::Player(string nickName, int HP, int MP, int power, int defence, int accuracy, int speed)
+    : nickName(nickName), level(1), HP(HP), MP(MP), power(power), defence(defence), accuracy(accuracy), speed(speed)
+{}
 
 void Player::printPlayerStatus() {
     cout << "------------------------------------" << endl;

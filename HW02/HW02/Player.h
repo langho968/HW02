@@ -6,7 +6,9 @@ using namespace std;
 class Player
 {
 public:
-    Player(string nickName);
+    //Player(string nickName);
+    Player(string nickName, int hp, int mp, int pwr, int def, int acc, int spd);
+        
 
     
     virtual void attack() = 0;
